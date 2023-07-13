@@ -1,0 +1,222 @@
+@media(max-width: 2000px){
+body{
+    margin: 0;
+    background: lightblue;
+    font: 19px;
+    box-sizing: border-box;  
+}
+.nav-bar{
+    background: purple;
+    padding: 2%;
+    
+    position: sticky;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    color: lightblue;
+    font-weight: 300;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#search{
+    margin-top: -4%;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    right: 100px;
+}
+
+#search input{
+    border: 2px solid black;
+    padding: 10px;
+    width: 80%;
+    font-size: 18px;
+    background: white;
+    display: flex;
+    flex-direction: row;   
+}
+#search input:focus{
+    outline: none;
+}
+
+#button{
+    height: 45px;
+    font-size: 18px;
+    right: -62px;
+    top: 1.7px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid rgb(209, 202, 202);
+    transition: all ease-in .8s .2s;
+}
+#button:hover{
+    background: rgb(192, 128, 128);
+}
+
+.container1{
+    background: white;
+    line-height: 20px;
+    top: 13.09%;
+    width: 100%;
+    text-align: center;
+    font: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    float: left;
+    display: transparent;
+
+}
+
+.book-shelf span{
+    margin-top: 10px;
+}
+
+.book-shelf{
+    display: flex;
+    padding-right: 0;
+    flex-shrink: 1;
+    line-height: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+    right: -20px;
+    width: 70%;
+    position: relative;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.side-container{
+    background-color: white;
+    padding-left: 50px;
+    position: relative;
+    height: 30%;
+    width: 20%;
+    float: right;
+}
+img{
+    object-fit: fill;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid white;
+    background: white;
+    cursor: pointer;
+    object-fit: cover;
+}
+img:hover{
+    transition: .5s;
+    width: 155px;
+    height: 155px;
+}
+
+a{
+    display: flex;
+    flex-direction: row;  
+}
+.image{
+   text-align: center;
+   flex-wrap: wrap;
+   display: flex;
+   flex-direction: column;
+   margin: 5px;
+   margin-top: 40px;
+   background: white;
+   border: 1px solid rgb(197, 197, 187);
+   margin-right: 25px;
+   margin-left: 60px;
+   text-overflow: wrap;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   box-shadow: 3px 3px 1px 3px rgba(5, 5, 0, 0.8);
+   border-radius: 5px;
+}
+.preview{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 5;
+    right: 5%;
+    width: 70.5%;
+    height: 150px;
+    border: none;
+    line-height: 18px;
+    cursor: pointer;
+    position: absolute;
+    transition: all .1s ease-in .2s;
+    overflow: hidden;
+    margin-top: -10px;  
+}
+h4{
+    margin-top: 12px;   
+}
+.p{
+    margin-top: -14px;
+}
+
+.image:hover{ 
+    padding: 0.3%;
+    background: rgb(241, 241, 234);
+}
+}
+@media(max-width: 1200px){
+    #search{
+        margin-top: -40px;
+    }
+    .nav-bar{
+        background: purple;
+        padding: 2%;
+        
+        position: sticky;
+    }
+    .logo p{
+        margin-top: 10px;
+        width: 17%;
+        height: 25%;
+        background: white;
+    }
+    .book-shelf{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        font-size: 14px;
+    }
+    img{
+    object-fit: fill;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 2px solid white;
+    background: white;
+    margin-left: 50px;
+    cursor: pointer;
+    object-fit: cover;
+    }
+    img:hover{
+        height: 130px;
+        width: 130px;
+    }
+    .image{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        text-overflow: wrap;
+        width: 300px;
+        height: 420px;
+        
+    }
+    .preview{
+        float: right;
+        margin-right: -50px;
+        margin-top: 130px;
+        width: 260px;
+        height: 300px;
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+    }
+}
